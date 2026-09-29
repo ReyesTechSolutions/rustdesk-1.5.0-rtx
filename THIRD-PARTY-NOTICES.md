@@ -22,7 +22,7 @@ COMERCIABILIDAD o APTITUD PARA UN PROPÓSITO PARTICULAR. Véase `LICENSE.txt`.
 
 Conforme a la AGPLv3, el código fuente completo y correspondiente de la
 versión 1.5.0 de esta distribución está disponible en:
-https://github.com/reyes-tec-solutions/rustdesk-1.5.0-rtx
+https://github.com/ReyesTechSolutions/rustdesk-1.5.0-rtx
 
 ## Componentes compilados dentro de la aplicación (vía vcpkg)
 
@@ -70,7 +70,7 @@ el repositorio de código fuente indicado arriba.
 AGPLv3 §13 y las licencias BSD/MIT de los componentes exigen poner el código
 fuente a disposición de quien recibe los binarios:
 
-**https://github.com/reyes-tec-solutions/rustdesk-1.5.0-rtx**
+**https://github.com/ReyesTechSolutions/rustdesk-1.5.0-rtx**
 
 Incluye: árbol fuente 1.5.0 + modificaciones Reyes Tech Solutions +
 ports vcpkg + instrucciones de compilación (GUIA-COMPILACION-REYES-TECH.md).
