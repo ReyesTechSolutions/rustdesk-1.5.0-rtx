@@ -29,6 +29,7 @@
 			<string>com.carriez.rustdesk</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
+				<string>reyestechsolutions</string>
 				<string>rustdesk</string>
 			</array>
 		</dict>

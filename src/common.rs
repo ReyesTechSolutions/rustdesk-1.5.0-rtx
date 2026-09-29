@@ -1090,7 +1090,9 @@ pub fn is_rustdesk() -> bool {
 
 #[inline]
 pub fn get_uri_prefix() -> String {
-    format!("{}://", get_app_name().to_lowercase())
+    // A URI scheme cannot contain spaces, so a multi-word app name collapses
+    // into one token: "Reyes Tech Solutions" -> "reyestechsolutions://".
+    format!("{}://", get_app_name().to_lowercase().replace(' ', ""))
 }
 
 #[cfg(target_os = "macos")]
@@ -2357,7 +2359,18 @@ pub fn rustdesk_interval(i: Interval) -> ThrottledInterval {
     ThrottledInterval::new(i)
 }
 
+/// Baked-in branding for the Reyes Tech Solutions custom client. Applied before
+/// any `custom.txt` config so a per-installation file can still override it.
+fn apply_reyes_tech_branding() {
+    *config::APP_NAME.write().unwrap() = "Reyes Tech Solutions".to_owned();
+    config::HARD_SETTINGS
+        .write()
+        .unwrap()
+        .insert("app-name".to_string(), "Reyes Tech Solutions".to_string());
+}
+
 pub fn load_custom_client() {
+    apply_reyes_tech_branding();
     #[cfg(debug_assertions)]
     if let Ok(data) = std::fs::read_to_string("./custom.txt") {
         read_custom_client(data.trim());

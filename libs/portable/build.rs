@@ -8,7 +8,11 @@ fn main() {
                 winapi::um::winnt::LANG_ENGLISH,
                 winapi::um::winnt::SUBLANG_ENGLISH_US,
             ))
-            .set_manifest_file("../../res/manifest.xml");
+            .set_manifest_file("../../res/manifest.xml")
+            .set("ProductName", "Reyes Tech Solutions")
+            .set("FileDescription", "Reyes Tech Solutions Remote Desktop")
+            .set("CompanyName", "Reyes Tech Solutions")
+            .set("LegalCopyright", "Copyright © 2026 Reyes Tech Solutions. Basado en RustDesk © Purslane Ltd. y contribuidores, licencia AGPLv3.");
         match res.compile() {
             Err(e) => {
                 write!(std::io::stderr(), "{}", e).unwrap();

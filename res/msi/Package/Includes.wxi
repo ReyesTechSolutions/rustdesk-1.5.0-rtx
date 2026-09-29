@@ -2,6 +2,18 @@
 <Include xmlns="http://wixtoolset.org/schemas/v4/wxs">
 
 	<!--$PreVarsStart$-->
+	<?define Version="1.5.0.29844267" ?>
+	<?define Manufacturer="Reyes Tech Solutions" ?>
+	<?define Product="Reyes Tech Solutions" ?>
+	<?define Description="Reyes Tech Solutions Installer" ?>
+	<?define ProductLower="reyestechsolutions" ?>
+	<?define RegKeyRoot=".$(var.ProductLower)" ?>
+	<?define RegKeyInstall="$(var.RegKeyRoot)\Install" ?>
+	<?define BuildDir="C:\rustdesk\flutter\build\windows\x64\runner\Release" ?>
+	<?define BuildDate="2026-09-28 21:49" ?>
+
+	<!-- The UpgradeCode must be consistent for each product. ! -->
+	<?define UpgradeCode = "d4a92160-491d-5dff-8eea-6d85ef55da57" ?>
 	<!--$PreVarsEnd$-->
 
 </Include>
