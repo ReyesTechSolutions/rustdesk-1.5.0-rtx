@@ -1,9 +1,13 @@
 name: Flutter Nightly Build
 
 on:
-  schedule:
-    # schedule build every night
-    - cron: "0 0 * * *"
+  # Sin compilaciones nocturnas programadas: este fork compila localmente y los
+  # runners self-hosted de upstream no existen aquí (los runs programados morían
+  # con "Startup failure" y generaban un email de fallo cada noche).
+  # Para un build manual: Actions → Flutter Nightly Build → Run workflow.
+  # schedule:
+  #   # schedule build every night
+  #   - cron: "0 0 * * *"
   workflow_dispatch:
 
 jobs:

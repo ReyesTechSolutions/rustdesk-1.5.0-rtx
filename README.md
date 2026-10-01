@@ -64,3 +64,9 @@ El fuente completo correspondiente a cada binario publicado por Reyes Tech Solut
 está disponible en este repositorio (etiqueta/commit correspondiente a la versión).
 Para reportes sobre esta distribución: reyes.tech.solutionss@gmail.com
 ```
+
+---
+
+## README del proyecto base (RustDesk)
+
+El README original de RustDesk —con instrucciones de compilación multiplataforma, estructura del código y capturas— está en [`README-RUSTDESK.md`](README-RUSTDESK.md).
