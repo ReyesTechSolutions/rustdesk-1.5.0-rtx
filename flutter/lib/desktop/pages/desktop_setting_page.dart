@@ -2554,7 +2554,7 @@ class _AboutState extends State<_About> {
                       .marginSymmetric(vertical: 4.0)),
               InkWell(
                   onTap: () {
-                    launchUrlString('https://reyestechsolutions.netlify.app/privacidad.html');
+                    launchUrlString('https://reyestechsolutions.netlify.app/privacidad-soporte-remoto.html');
                   },
                   child: Text(
                     translate('Privacy Statement'),
@@ -2570,7 +2570,7 @@ class _AboutState extends State<_About> {
                   ).marginSymmetric(vertical: 4.0)),
               InkWell(
                   onTap: () {
-                    launchUrlString('https://github.com/reyes-tec-solutions/rustdesk-1.5.0-rtx');
+                    launchUrlString('https://github.com/ReyesTechSolutions/rustdesk-1.5.0-rtx');
                   },
                   child: Text(
                     translate('Source Code'),
@@ -2588,7 +2588,10 @@ class _AboutState extends State<_About> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            'Copyright © ${DateTime.now().toString().substring(0, 4)} Reyes Tech Solutions\n$license',
+                            'Copyright © ${DateTime.now().toString().substring(0, 4)} Reyes Tech Solutions\n'
+                            'Basado en RustDesk © Purslane Ltd. y contribuidores, licencia AGPLv3.\n'
+                            'https://github.com/ReyesTechSolutions/rustdesk-1.5.0-rtx\n'
+                            '$license',
                             style: const TextStyle(color: Colors.white),
                           ),
                           Text(
